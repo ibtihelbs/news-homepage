@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "font";
+  src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img{
+  max-width: 100%;
+}
+body {
+  font-family: "font";
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+.child{
+  background-color: pink;
+}
+.child img{
+  height: 100%;
+}
+.child1{
+  grid-column: span 2;
+}
+.child2{
+  grid-row: span 2;
+
+}
