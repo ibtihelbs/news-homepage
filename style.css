@@ -1,48 +1,59 @@
-@font-face {
-  font-family: "font";
-  src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
-img{
+
+img {
   max-width: 100%;
+  max-height: 100%;
 }
 body {
-  font-family: "font";
+  font-family: "Inter", sans-serif;
+  padding: 1rem 6rem;
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 1.5rem;
 }
 ul {
   list-style: none;
   display: flex;
   gap: 15px;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-section{
+section {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
-.child{
-  background-color: pink;
-}
-.child img{
+.child img {
   height: 100%;
 }
-.child1{
+.child1 {
   grid-column: span 2;
 }
-.child2{
+.child3 h1 {
+  font-size: 56px;
+}
+.child2 {
   grid-row: span 2;
-
+}
+.more-news {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.more-news div {
+  padding: 1rem;
+}
+.bgc {
+  background-color: blue;
+  color: white;
 }
